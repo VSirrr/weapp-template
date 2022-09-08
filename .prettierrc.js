@@ -1,6 +1,6 @@
 // https://prettier.io/docs/en/options.html
 module.exports = {
-  semi: true,
+  semi: false,
   tabWidth: 2,
   printWidth: 80,
   useTabs: false,
@@ -10,7 +10,5 @@ module.exports = {
   trailingComma: 'all',
   arrowParens: 'avoid',
   bracketSpacing: true,
-  jsxSingleQuote: false,
   quoteProps: 'as-needed',
-  htmlWhitespaceSensitivity: 'strict',
-};
+}
