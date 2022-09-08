@@ -39,7 +39,9 @@
     "showES6CompileOption": false,
     "ignoreDevUnusedFiles": true,
     "ignoreUploadUnusedFiles": true,
-    "useCompilerPlugins": ["less"]
+    "useCompilerPlugins": [
+      "less"
+    ]
   },
   "compileType": "miniprogram",
   "libVersion": "2.26.0",
