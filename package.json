@@ -1,0 +1,45 @@
+{
+  "name": "weapp-template",
+  "version": "0.1.0",
+  "description": "a wechat miniprogram project template to start develop",
+  "scripts": {
+    "lint:fix": "npm run lint:eslint && npm run lint:prettier",
+    "lint:eslint": "eslint --fix --ext .js",
+    "lint:prettier": "prettier --write --loglevel warn '*.{js,json,md}'",
+    "prepare": "husky install && chmod ug+x .husky/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VSirrr/weapp-template.git"
+  },
+  "keywords": [
+    "wechat",
+    "weapp",
+    "miniprogram"
+  ],
+  "author": "VSirrr",
+  "license": "Apache License",
+  "bugs": {
+    "url": "https://github.com/VSirrr/weapp-template/issues"
+  },
+  "homepage": "https://github.com/VSirrr/weapp-template#readme",
+  "dependencies": {
+    "@vant/weapp": "^1.10.5"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "eslint": "^8.23.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}
