@@ -20,7 +20,6 @@
 ├── components #组件文件
 ├── config #配置（开发环境、版本信息、接口域名等）
 ├── images #图片
-├── lib #第三方包
 ├── miniprogram_npm #第三方 npm 包
 ├── pages #主包页面
 ├── subpackages #分包

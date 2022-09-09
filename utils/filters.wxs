@@ -1,0 +1,57 @@
+var regPhone = getRegExp('^(\d{3})\d+(\d{2})$');
+
+/**
+ * 对明文手机号脱敏
+ * @param {string} val 明文手机号
+ * @returns {string} 脱敏手机号
+ */
+function phone(val) {
+  if (typeof val !== 'string') {
+    return val
+  }
+  return val.replace(regPhone, '$1******$2')
+}
+
+/**
+ * 对用户名脱敏
+ * @param {string} val 明文用户名称
+ * @returns {string} 脱敏用户名称
+ */
+function userName(val) {
+  if (typeof val !== 'string') {
+    return val
+  }
+  var length = val.length
+  if (length < 2) {
+    return val
+  }
+  var star = '*'
+  var prefix = val[0]
+  var suffix = val[length - 1]
+  if (length === 2) {
+    return star + suffix
+  }
+  var l = length - 3
+  while (l--) {
+    star += '*'
+  }
+  return prefix + star + suffix
+}
+
+/**
+ * 对身份证号码脱敏
+ * @param {string} val 明文份证号码
+ * @returns {string} 脱敏份证号码
+ */
+function IDNumber(val) {
+  if (typeof val !== 'string') {
+    return val
+  }
+  return val[0] + '***************' + val.slice(-1)
+}
+
+module.exports = {
+  phone: phone,
+  userName: userName,
+  IDNumber: IDNumber,
+}
