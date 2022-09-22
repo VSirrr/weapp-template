@@ -3,4 +3,4 @@ App({
     userInfo: null,
   },
   onLaunch() {},
-});
+})
