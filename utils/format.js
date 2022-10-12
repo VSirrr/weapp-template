@@ -73,6 +73,7 @@ function formatTime(time, format = 'YYYY-MM-DD hh:mm:ss') {
   if (typeof time === 'number') {
     date = new Date(time)
   } else if (typeof time === 'string') {
+    // fix: IOS time string include '-' error
     date = new Date(time.replace(/-/g, '/'))
   }
 
