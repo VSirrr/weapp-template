@@ -6,7 +6,7 @@
     "lint:fix": "npm run lint:eslint && npm run lint:prettier",
     "lint:eslint": "eslint --fix --ext .js",
     "lint:prettier": "prettier --write --loglevel warn '*.{js,json,md}'",
-    "prepare": "husky install && chmod ug+x .husky/*"
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
